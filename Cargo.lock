@@ -257,6 +257,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "img2webp"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "clap",
+ "image",
+ "rayon",
+ "walkdir",
+ "webp",
+]
+
+[[package]]
 name = "is_terminal_polyfill"
 version = "1.70.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -432,18 +444,6 @@ dependencies = [
  "proc-macro2",
  "quote",
  "unicode-ident",
-]
-
-[[package]]
-name = "test-1"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "clap",
- "image",
- "rayon",
- "walkdir",
- "webp",
 ]
 
 [[package]]
