@@ -93,3 +93,7 @@ Errors for individual files are printed to stderr and don't stop the run. The pr
 - Metadata (EXIF, ICC colour profiles) is not copied to the WebP. EXIF orientation is applied to the pixels before encoding.
 - Animated PNGs are converted as a single still frame.
 - 16-bit PNGs are reduced to 8 bits per channel, since WebP only supports 8-bit.
+
+## License
+
+[MIT](LICENSE)
