@@ -1,0 +1,16 @@
+[package]
+name = "img2webp"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.104"
+clap = { version = "4.6.7", features = ["derive"] }
+image = { version = "0.25.10", default-features = false, features = ["jpeg", "png"] }
+rayon = "1.12.0"
+walkdir = "2.5.0"
+webp = "0.3.1"
+
+[[bin]]
+name = "img2webp"
+path = "src/main.rs"
