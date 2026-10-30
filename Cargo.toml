@@ -3,6 +3,8 @@ name = "img2webp"
 version = "0.1.0"
 edition = "2024"
 license = "MIT"
+description = "Convert JPEG and PNG images to WebP, aiming for high visual quality at small file sizes"
+repository = "https://github.com/samwisecode/img2webp"
 
 [dependencies]
 anyhow = "1.0.104"
@@ -15,3 +17,8 @@ webp = "0.3.1"
 [[bin]]
 name = "img2webp"
 path = "src/main.rs"
+
+# The profile that 'dist' will build with
+[profile.dist]
+inherits = "release"
+lto = "thin"

@@ -10,6 +10,24 @@ A fast command-line tool that converts JPEG and PNG images to WebP, tuned for hi
 
 ## Installation
 
+### Prebuilt binaries
+
+macOS and Linux:
+
+```sh
+curl --proto '=https' --tlsv1.2 -LsSf https://github.com/samwisecode/img2webp/releases/latest/download/img2webp-installer.sh | sh
+```
+
+Windows (PowerShell):
+
+```powershell
+powershell -ExecutionPolicy Bypass -c "irm https://github.com/samwisecode/img2webp/releases/latest/download/img2webp-installer.ps1 | iex"
+```
+
+Archives for each platform are also attached to every [GitHub release](https://github.com/samwisecode/img2webp/releases).
+
+### From source
+
 Requires Rust 1.85 or newer (edition 2024) and a C compiler, since libwebp is built from source as part of the build.
 
 ```sh
